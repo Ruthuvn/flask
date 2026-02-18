@@ -44,10 +44,12 @@ flask/
 ├── backend/
 │   ├── app.py
 │   ├── data.json
+├── frontend/
 │   └── templates/
 │       ├── index.html
-│       └── success.html
-│
+│       └── todo.html
+|   ├── app.py
+│ 
 ├── requirements.txt
 ├── .gitignore
 └── README.md
