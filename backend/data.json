@@ -1,0 +1,6 @@
+{
+  "project": "Flask Signup App",
+  "version": "1.0",
+  "developer": "Ruthu",
+  "features": ["Signup", "View Data"]
+}

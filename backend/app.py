@@ -2,6 +2,8 @@ from flask import Flask, request, jsonify
 from dotenv import load_dotenv
 import os
 import pymongo
+import json
+
 
 # Load environment variables
 load_dotenv()
@@ -35,6 +37,14 @@ def view():
     data = list(collection.find({}, {'_id': 0, "name": 1, "password": 1}))  
 
     return jsonify(data)
+
+# API Route (Reads from JSON file)
+@app.route('/api')
+def api():
+    with open('data.json', 'r') as file:
+        data = json.load(file)
+    return jsonify(data)
+
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=9000, debug=True)
