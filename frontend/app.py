@@ -26,6 +26,11 @@ def submit():
     requests.post(f"{BACKEND_URL}/submit", json=form_data)
     return "Data submitted successfully!"
 
+@app.route('/todo')
+def todo():
+    return render_template('todo.html')
+
+
 @app.route('/get_data')
 def get_data():
     response = requests.get(f"{BACKEND_URL}/view")
