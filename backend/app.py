@@ -38,6 +38,20 @@ def view():
 
     return jsonify(data)
 
+@app.route('/submittodoitem', methods=['POST'])
+def submittodoitem():
+    data = request.form
+
+    todo_collection = db["todo"]
+
+    todo_collection.insert_one({
+        "itemName": data.get("itemName"),
+        "itemDescription": data.get("itemDescription")
+    })
+
+    return jsonify({"message": "To-Do item added successfully"})
+
+
 # API Route (Reads from JSON file)
 @app.route('/api')
 def api():
