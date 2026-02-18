@@ -1,6 +1,12 @@
 {
   "project": "Flask Signup App",
-  "version": "1.0",
-  "developer": "Ruthu",
-  "features": ["Signup", "View Data"]
+  "version": "2.0",
+  "developer": "Ruthu Parinika",
+  "features": [
+    "Signup",
+    "View Data",
+    "To-Do Feature",
+    "MongoDB Integration"
+  ],
+  "status": "Updated in Ruthu_new branch"
 }
