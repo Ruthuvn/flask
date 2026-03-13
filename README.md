@@ -44,6 +44,7 @@ flask/
 ├── backend/                # Flask Backend
 │   ├── app.py
 │   ├── data.json
+<<<<<<< HEAD
 │   ├── requirements.txt
 │   └── Dockerfile
 │
@@ -57,6 +58,15 @@ flask/
 |       └── todo.html
 │
 ├── docker-compose.yaml
+=======
+├── frontend/
+│   └── templates/
+│       ├── index.html
+│       └── todo.html
+|   ├── app.py
+│ 
+├── requirements.txt
+>>>>>>> 650bf6509be1270868350ec477e40cf23111cd77
 ├── .gitignore
 └── README.md
 ```
