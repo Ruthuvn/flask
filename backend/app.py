@@ -27,7 +27,7 @@ def home():
 # Submit Route
 @app.route('/submit', methods=['POST'])
 def submit():
-    form_data = dict(request.json)
+    form_data = request.json
     collection.insert_one(form_data)
     return "Data submitted successfully!"
 

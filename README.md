@@ -41,14 +41,22 @@ A simple Flask web application that demonstrates:
 ```
 flask/
 │
-├── backend/
+├── backend/                # Flask Backend
 │   ├── app.py
 │   ├── data.json
-│   └── templates/
-│       ├── index.html
-│       └── success.html
+│   ├── requirements.txt
+│   └── Dockerfile
 │
-├── requirements.txt
+├── frontend/               # Node.js Express Frontend
+│   ├── app.js
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── Dockerfile
+│   └── public/
+│       └── index.html
+|       └── todo.html
+│
+├── docker-compose.yaml
 ├── .gitignore
 └── README.md
 ```

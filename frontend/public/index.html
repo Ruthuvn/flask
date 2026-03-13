@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sign Up Form</title>
+
+<style>
+body {
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.centred {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 100px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+input {
+    padding: 8px;
+    margin: 10px;
+    width: 80%;
+}
+
+input[type="submit"] {
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: darkgreen;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="centred">
+
+<h1>Welcome Signup Page</h1>
+
+<p>Today is <span id="day"></span></p>
+<p>The Time is <span id="time"></span></p>
+
+<form action="/submit" method="POST">
+
+<input type="text" name="name" placeholder="Enter your name" required><br>
+
+<input type="password" name="password" placeholder="Enter your password" required><br>
+
+<input type="submit" value="Submit">
+
+</form>
+
+<script>
+
+const now = new Date();
+
+const day = now.toLocaleDateString("en-US", { weekday: "long" });
+const time = now.toLocaleTimeString();
+
+document.getElementById("day").textContent = day;
+document.getElementById("time").textContent = time;
+
+</script>
+
+</div>
+
+</body>
+</html>
