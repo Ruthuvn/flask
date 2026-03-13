@@ -44,7 +44,6 @@ flask/
 ├── backend/                # Flask Backend
 │   ├── app.py
 │   ├── data.json
-<<<<<<< HEAD
 │   ├── requirements.txt
 │   └── Dockerfile
 │
@@ -55,18 +54,8 @@ flask/
 │   ├── Dockerfile
 │   └── public/
 │       └── index.html
-|       └── todo.html
 │
 ├── docker-compose.yaml
-=======
-├── frontend/
-│   └── templates/
-│       ├── index.html
-│       └── todo.html
-|   ├── app.py
-│ 
-├── requirements.txt
->>>>>>> 650bf6509be1270868350ec477e40cf23111cd77
 ├── .gitignore
 └── README.md
 ```
@@ -141,7 +130,7 @@ python backend/app.py
 Open in browser:
 
 ```
-http://127.0.0.1:5000/
+http://127.0.0.1:9000/
 ```
 
 ---
