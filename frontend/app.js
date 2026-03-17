@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Serve HTML directly
 app.get("/", (req, res) => {
 
-    res.sendFile(path.join(__dirname, "public", "index.html"));
+    res.sendFile(path.join(__dirname, "public", "index.ejs"));
 
 });
 
