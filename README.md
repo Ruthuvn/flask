@@ -53,7 +53,7 @@ flask/
 │   ├── package-lock.json
 │   ├── Dockerfile
 │   └── public/
-│       └── index.html
+│       └── index.ejs
 │
 ├── docker-compose.yaml
 ├── .gitignore
