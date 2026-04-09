@@ -55,7 +55,7 @@ flask/
 │   └── public/
 │       └── index.ejs
 │
-├── docker-compose.yaml
+├── docker-compose.yml
 ├── .gitignore
 └── README.md
 ```

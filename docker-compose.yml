@@ -7,21 +7,22 @@ services:
     ports:
       - "9000:9000"
     volumes:
-        - ./backend:/app
+      - ./backend:/app
     networks:
       - app-network
 
   frontend:
     build: ./frontend
     hostname: frontend
-    networks:
-      - app-network
     ports:
       - "3000:3000"
     volumes:
       - ./frontend:/app
+      - /app/node_modules   
     depends_on:
-        - backend
+      - backend
+    networks:
+      - app-network
 
 networks:
   app-network: {}
